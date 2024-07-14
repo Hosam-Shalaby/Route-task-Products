@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:routetask/domain/entities/product.dart';
@@ -13,7 +15,6 @@ class ProductWidget extends StatelessWidget {
         height: 100,
         width: 100,
         margin: const EdgeInsets.all(5),
-        // margin: const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
         padding: const EdgeInsets.symmetric(vertical: 5),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
@@ -27,8 +28,7 @@ class ProductWidget extends StatelessWidget {
           child: Stack(
             children: [
               Wrap(
-                  // mainAxisAlignment: MainAxisAlignment.start,
-                  // crossAxisAlignment: CrossAxisAlignment.start,
+               
                   children: [
                     Stack(
                       children: [

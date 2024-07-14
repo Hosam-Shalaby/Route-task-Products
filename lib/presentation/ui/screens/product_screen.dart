@@ -1,5 +1,6 @@
+// ignore_for_file: avoid_print
+
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:routetask/di/di.dart';
@@ -23,7 +24,6 @@ class _TaskScreenState extends State<ProductScreen> {
   ProductScreenCubit viewModel = getIt<ProductScreenCubit>();
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     viewModel.initPage();
   }
@@ -64,12 +64,7 @@ class _TaskScreenState extends State<ProductScreen> {
             {
               var products = state.Products;
               return Scaffold(
-                  // appBar: AppBar(
-                  //   title: const Text(
-                  //     'Route',
-                  //     style: TextStyle(color: Colors.blue),
-                  //   ),
-                  // ),
+             
                   body: Column(
                 children: [
                   const SizedBox(height: 25),

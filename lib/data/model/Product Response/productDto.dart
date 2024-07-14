@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:routetask/domain/entities/product.dart';
 
 import 'dimensions.dart';
@@ -58,36 +60,7 @@ class ProductDto {
     return 'Product(id: $id, title: $title, description: $description, category: $category, price: $price, discountPercentage: $discountPercentage, rating: $rating, stock: $stock, tags: $tags, brand: $brand, sku: $sku, weight: $weight, dimensions: $dimensions, warrantyInformation: $warrantyInformation, shippingInformation: $shippingInformation, availabilityStatus: $availabilityStatus, reviews: $reviews, returnPolicy: $returnPolicy, minimumOrderQuantity: $minimumOrderQuantity, meta: $meta, images: $images, thumbnail: $thumbnail)';
   }
 
-  // factory ProductDto.fromJson(Map<String, dynamic> json) => ProductDto(
-  //       id: json['id'] as int?,
-  //       title: json['title'] as String?,
-  //       description: json['description'] as String?,
-  //       category: json['category'] as String?,
-  //       price: (json['price'] as num?)?.toDouble(),
-  //       discountPercentage: (json['discountPercentage'] as num?)?.toDouble(),
-  //       rating: (json['rating'] as num?)?.toDouble(),
-  //       stock: json['stock'] as int?,
-  //       tags: json['tags'] as List<String>?,
-  //       brand: json['brand'] as String?,
-  //       sku: json['sku'] as String?,
-  //       weight: json['weight'] as int?,
-  //       dimensions: json['dimensions'] == null
-  //           ? null
-  //           : Dimensions.fromJson(json['dimensions'] as Map<String, dynamic>),
-  //       warrantyInformation: json['warrantyInformation'] as String?,
-  //       shippingInformation: json['shippingInformation'] as String?,
-  //       availabilityStatus: json['availabilityStatus'] as String?,
-  //       reviews: (json['reviews'] as List<dynamic>?)
-  //           ?.map((e) => Review.fromJson(e as Map<String, dynamic>))
-  //           .toList(),
-  //       returnPolicy: json['returnPolicy'] as String?,
-  //       minimumOrderQuantity: json['minimumOrderQuantity'] as int?,
-  //       meta: json['meta'] == null
-  //           ? null
-  //           : Meta.fromJson(json['meta'] as Map<String, dynamic>),
-  //       images: json['images'] as List<String>?,
-  //       thumbnail: json['thumbnail'] as String?,
-  //     );
+ 
   factory ProductDto.fromJson(Map<String, dynamic> json) => ProductDto(
         id: json['id'] as int?,
         title: json['title'] as String?,
