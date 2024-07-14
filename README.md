@@ -1,24 +1,12 @@
 # Project Title
 
-A brief description of what this project does and who it's for
+Route Task for event..
 
 ## Screenshots
 
-![Screenshot 1](link_to_screenshot_1.png)
-![Screenshot 2](link_to_screenshot_2.png)
-
-## Installation
-
-Instructions on how to install the project.
+![Screenshot 1](https://github.com/Hosam-Shalaby/Route-task-Products/blob/main/assets/images/task.PNG)
 
 ## Usage
 
-Instructions on how to use the project.
+Using flutter widgets as per taskscreen, bloc state management,mvvm pattern, repository pattern,DI (injectable-get it) and clean arch
 
-## Contributing
-
-Instructions on how to contribute to the project.
-
-## License
-
-Details about the license.
